@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+<style>
+#h:hover{border:2px solid blue;color:blue;font-family:Fixedsys;font-weight:bold;transition-timing-function: ease-in-out;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+</style>
+</head>
+<body style="background:url(https://mocah.org/uploads/posts/5376076-water-background-smooth-pink-blue-nervum-soothing-reflection-line-free-images.jpg);">
+
+<br>
+<center><h1 style="font-family:Harrington;color:#f7347a;">
+Help us make better with your feedback!</h1>
+<h3 style="background-color:yellow; width:50%;">Your response helps us improve the game. Thank you! </h3></center>
+
+
+<form>
+<fieldset style="border-color:#ffc0cb;">
+<br><table><tr><td>
+First Name :      </td><td><input id="h" type="text" placeholder="Enter your first name here" maxlength="10" style="width:100%;" required></td></tr><tr><td>
+Last Name  :      </td><td><input id="h" type="text" placeholder="Enter your last name here" maxlength="10" style="width:100%;" required></td></tr><tr><td>
+Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+<td><input id="h" type="number" placeholder="Enter your age here" max="50" min="18" style="width:100%;" required></td></tr></table><br><br>
+How much do you agree or disagree with these statements? *<br><br>
+1. I had fun playing this game<br>
+<hr><br>
+<input id="h" type="radio" name="r1" >Strongly Disagree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="h" type="radio" name="r1">Disagree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="h" type="radio" name="r1">Nuetral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r1">Agree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="h" type="radio" name="r1">Strongly agree<br><br>
+2. I'd like to play a full, longer version of this game<br>
+<hr><br>
+<input id="h" type="radio" name="r2">Strongly Disagree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r2">Disagree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="h" type="radio" name="r2">Nuetral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r2">Agree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="h" type="radio" name="r2">Strongly agree<br><br>
+3. How often do you play video games? *<br>
+<hr><br>
+<input id="h" type="radio" name="r3"> I don't play online games&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r3">Rarely (a few times a year)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="h" type="radio" name="r3"> Sometimes (a few times a month)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r3"> Often (a few times a week)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="h" type="radio" name="r3"> Every day<br><br>
+4. Rating for GAMES : <br>
+<div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="5 Star">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="4 Star">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="3 Star">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="2 Star">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="1 Star">1 star</label>
+  </div><br><br>
+
+<p>5.Any other feedback?Was there any­thing you want­ed to do that you couldn’t? If you could change anything, what would it be?</p><br>
+<textarea id="h" rows="4" cols="170" style="margin-left:40px;"></textarea><br><br>
+<center><input id="h" type="button" onclick="window.location = 'game.html';alert('Thank You!!!');" value="SUBMIT" style="background-color:transparent; height:40px; width:80px;border-radius: 20px;">
+</center><br><br>
+</fieldset>
+</form>
+</body>
+</html>
